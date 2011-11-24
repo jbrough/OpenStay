@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  list_code: MyString
+  name: MyString
+  code: MyString
+  domain: MyString
+  definition: MyText
+  date: 2011-11-20
+
+two:
+  list_code: MyString
+  name: MyString
+  code: MyString
+  domain: MyString
+  definition: MyText
+  date: 2011-11-20

@@ -1,0 +1,2 @@
+module Geo::CountriesHelper
+end

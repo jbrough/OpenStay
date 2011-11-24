@@ -1,0 +1,33 @@
+<h1>Listing ota_code_list_codes</h1>
+
+<table>
+  <tr>
+    <th>List code</th>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Domain</th>
+    <th>Definition</th>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ota_code_list_codes.each do |ota_code_list_code| %>
+  <tr>
+    <td><%= ota_code_list_code.list_code %></td>
+    <td><%= ota_code_list_code.name %></td>
+    <td><%= ota_code_list_code.code %></td>
+    <td><%= ota_code_list_code.domain %></td>
+    <td><%= ota_code_list_code.definition %></td>
+    <td><%= ota_code_list_code.date %></td>
+    <td><%= link_to 'Show', ota_code_list_code %></td>
+    <td><%= link_to 'Edit', edit_ota_code_list_code_path(ota_code_list_code) %></td>
+    <td><%= link_to 'Destroy', ota_code_list_code, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Code', new_ota_code_list_code_path %>

@@ -1,0 +1,31 @@
+<h1>Listing geo_countries</h1>
+
+<table>
+  <tr>
+    <th>Name en</th>
+    <th>Alpha2</th>
+    <th>Alpha3</th>
+    <th>Un m49</th>
+    <th>Iso</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @geo_countries.each do |geo_country| %>
+  <tr>
+    <td><%= geo_country.name_en %></td>
+    <td><%= geo_country.alpha2 %></td>
+    <td><%= geo_country.alpha3 %></td>
+    <td><%= geo_country.un_m49 %></td>
+    <td><%= geo_country.iso %></td>
+    <td><%= link_to 'Show', geo_country %></td>
+    <td><%= link_to 'Edit', edit_geo_country_path(geo_country) %></td>
+    <td><%= link_to 'Destroy', geo_country, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Country', new_geo_country_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ota_code_list_list.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @ota_code_list_list.code %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @ota_code_list_list.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_ota_code_list_list_path(@ota_code_list_list) %> |
+<%= link_to 'Back', ota_code_list_lists_path %>

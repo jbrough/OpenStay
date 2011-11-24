@@ -1,0 +1,2 @@
+module Geo::PointsHelper
+end

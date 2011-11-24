@@ -1,0 +1,41 @@
+<%= form_for(@ota_code_list_code) do |f| %>
+  <% if @ota_code_list_code.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ota_code_list_code.errors.count, "error") %> prohibited this ota_code_list_code from being saved:</h2>
+
+      <ul>
+      <% @ota_code_list_code.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :list_code %><br />
+    <%= f.text_field :list_code %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :domain %><br />
+    <%= f.text_field :domain %>
+  </div>
+  <div class="field">
+    <%= f.label :definition %><br />
+    <%= f.text_area :definition %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

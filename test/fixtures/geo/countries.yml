@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_en: MyString
+  alpha2: MyString
+  alpha3: MyString
+  un_m49: 
+  iso: MyString
+
+two:
+  name_en: MyString
+  alpha2: MyString
+  alpha3: MyString
+  un_m49: 
+  iso: MyString

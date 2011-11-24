@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name en:</b>
+  <%= @geo_country.name_en %>
+</p>
+
+<p>
+  <b>Alpha2:</b>
+  <%= @geo_country.alpha2 %>
+</p>
+
+<p>
+  <b>Alpha3:</b>
+  <%= @geo_country.alpha3 %>
+</p>
+
+<p>
+  <b>Un m49:</b>
+  <%= @geo_country.un_m49 %>
+</p>
+
+<p>
+  <b>Iso:</b>
+  <%= @geo_country.iso %>
+</p>
+
+
+<%= link_to 'Edit', edit_geo_country_path(@geo_country) %> |
+<%= link_to 'Back', geo_countries_path %>
